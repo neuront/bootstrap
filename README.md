@@ -1,4 +1,15 @@
-# [Bootstrap](http://getbootstrap.com)
+# Compile
+
+    npm install
+    grunt
+
+# Changes
+
+* Based on the [Darkly](https://bootswatch.com/darkly/) theme.
+* Remove ALL `border-radius`.
+* Add style for `dl` `dd` `dt`.
+
+# [Bootstrap](http://getbootstrap.com) with Darkly
 
 [![Slack](https://bootstrap-slack.herokuapp.com/badge.svg)](https://bootstrap-slack.herokuapp.com)
 ![Bower version](https://img.shields.io/bower/v/bootstrap.svg)
