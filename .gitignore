@@ -1,4 +1,7 @@
 # Ignore docs files
+docs
+dist
+
 _gh_pages
 _site
 .ruby-version
