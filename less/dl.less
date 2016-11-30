@@ -1,0 +1,101 @@
+@dl-default-clr: @gray;
+@dl-primary-clr: @brand-primary;
+@dl-success-clr: @brand-success;
+@dl-info-clr: @brand-info;
+@dl-warning-clr: @brand-warning;
+@dl-danger-clr: @brand-danger;
+
+@cut-edge: 16px;
+
+.dt {
+    width: 33%;
+    float: left;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    line-height: 2;
+    position: relative;
+    color: @text-color;
+    text-align: center;
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 100%;
+        border-width: 0 0 @cut-edge @cut-edge;
+        border-style: solid;
+        border-color: transparent @body-bg;
+        margin-right: -@cut-edge;
+    }
+}
+
+.dd {
+    width: 66%;
+    float: left;
+    line-height: 2;
+    text-align: center;
+}
+
+.dt.dt-25 {
+    width: 25%;
+}
+.dt.dt-25+.dd {
+    width: 75%;
+}
+
+.dt.dt-50 {
+    width: 50%;
+}
+.dt.dt-50+.dd {
+    width: 50%;
+}
+
+.dt-variant(@color) {
+    background-color: @color;
+    border-color: @color;
+}
+
+.dt-default {
+    .dt-variant(@dl-default-clr);
+}
+.dt-warning {
+    .dt-variant(@dl-warning-clr);
+}
+.dt-danger {
+    .dt-variant(@dl-danger-clr);
+}
+.dt-info {
+    .dt-variant(@dl-info-clr);
+}
+.dt-primary {
+    .dt-variant(@dl-primary-clr);
+}
+.dt-success {
+    .dt-variant(@dl-success-clr);
+}
+
+.dt+.dd {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
+.dt+.dd-no-border {
+    border-bottom-style: none;
+}
+.dt-default+.dd {
+    border-color: @dl-default-clr;
+}
+.dt-warning+.dd {
+    border-color: @dl-warning-clr;
+}
+.dt-danger+.dd {
+    border-color: @dl-danger-clr;
+}
+.dt-info+.dd {
+    border-color: @dl-info-clr;
+}
+.dt-primary+.dd {
+    border-color: @dl-primary-clr;
+}
+.dt-success+.dd {
+    border-color: @dl-success-clr;
+}
